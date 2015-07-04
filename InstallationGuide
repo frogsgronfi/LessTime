@@ -1,0 +1,37 @@
+Installazione e Configurazione del sistema
+
+In questo paragrafo vedremo come installare e configurare il programma, utilizzando un web server. Il sistema è stato testato su Ubuntu 14.10 e successivi. I componenti necessari all’installazione sono: Apache, PHP, MySql, GLPK, Wkhtmltopdf. Si procederà dunque nel seguente modo:
+
+1) Occorre innanzitutto installare Apache:
+Apache è un server http open source per i moderni sistemi operativi. Per installare Apache digitare dal terminale:
+sudo apt-get install apache2
+Completata l’installazione, verrà creata una cartella  /var/www/html
+
+2) In un secondo momento, procederemo all’installazione di PHP:
+PHP può essere installato su Ubuntu digitando il seguente comando :
+sudo apt-get install php5 libapache2-mod-php5 
+
+3) Adesso è necessario installare MySql:
+MySql è un Relational database managment system (RDMBS) composto da un client, a riga di comando, e da un server. Per installare MySql, digitare da terminale:
+sudo apt-get install mysql-client mysql-server
+Durante l’installazione verrà richiesta una password per identificare l’utente root.
+
+4) Procediamo ora con l’installazione di phpmyamdin:
+phpmyadmin è un software utile alla gestione dei database MySql. Per installarlo bisogna digitare dal terminale:
+sudo apt-get install phpmyadmin
+Durante l’installazione verrà chiesto di inserire la password del database MySql, inserita in precedenza. Al termine dell’installazione dobbiamo dire al nostro Apache dove si trova il file di configurazione di phpmyadmin, che ci permetterà di eseguirlo dal browser, quindi apriamo il file apache2.conf con il nostro editor preferito, ad esempio con: sudo nano /etc/apache2/apache2.conf e aggiungiamo alla fine del file la seguente riga: Include /etc/phpmyadmin/apache.conf . Ora non ci resta che salvare il file e riavviare il server web con: sudo /etc/init.d/apache2 restart.
+A questo punto possiamo accedere al programma dall’indirizzo: http://localhost/phpmyadmin
+5) Dunque è possibile procedere con l’installazione di GLPK:
+GLPK è il pacchetto necessario al sistema per risolvere il problema dell’orario. Per installare GLPK bisogna digitare da terminale:
+sudo apt-get install glpk-doc glpk-utils
+
+6) Ora è necessario installare wkhtmltopdf:
+wkhtmltopdf è un pacchetto necessario alla generazione di file pdf partendo da file in formato html. Per richiamare questo pacchetto dal server bisogna per prima cosa installare xvfb. Per installarlo basterà eseguire il seguente comando da terminale:
+sudo apt-get install xvfb
+Dopodiché passiamo all’installazione di wkhtmltopdf con il seguente comando :
+sudo apt-get install wkhtmltopdf.
+
+7) È ora giunto il momento della configurazione:
+Innanzitutto bisogna copiare il contenuto della cartella LessTime, presente nel cd in allegato, all’interno della root /var/www/html del nostro webServer. In secondo luogo sarà necessario cambiare i permessi della cartella, con il comando :
+sudo chmod –R 777 /var/wwww/html
+ In seguito, importare il database presente nella sotto-cartella dumpDB. Per fare ciò bisogna accedere a phpmyadmin, digitando nel browser localhost/phpmyadmin, creare un nuovo database e importare il file startconfig.sql all’interno del database appena creato. Nella cartella dumpDB è inoltre presente un dump di un database contenente tutti i corsi del secondo semestre. Infine bisognerà editare il file config.php presente nella cartella LessTime specificando il nome del database creato in precedenza, username, password e indirizzo del database che è stato creato durante l’installazione. Per accedere alla pagina di login basterà aprire un qualsiasi browser web e digitare localhost/login.php.
