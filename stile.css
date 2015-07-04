@@ -1,0 +1,431 @@
+input {
+	 font-family: sans-serif;
+	 font-style: italic;
+}
+table{
+	 font-family: sans-serif;
+	 font-style: italic;
+}
+h3{
+	 font-family: sans-serif;
+	 font-style: italic;
+}
+.header{
+	 position:fixed;
+	 padding-left: 5cm;
+	 background-image: url(/img/header.jpg);
+	 height: 117;
+	 width: 100%;
+	 margin-top:-8px;
+	 margin-left:-9px;
+	 font-family: sans-serif;
+	 font-style: italic;
+}
+.loginpage{
+	 position:fixed;
+	 margin-left : 300px;
+	 margin-top : 136px;
+}
+.segreteriadiv{
+	position:fixed;
+	margin-top : 109px;
+	width : 200px;
+	height: 100%;
+	border-right-width:1px ;
+	border-right-color:#000000;
+	border-right-style:solid;
+}
+.profmenudiv{
+	 position:fixed;
+	 margin-top : 109px;
+	 width : 200px;
+	 height: 100%;
+	 border-right-width:1px ;
+	 border-right-color:#000000;
+	 border-right-style:solid;
+}
+.segreteriacontentsdiv{
+	 margin-left : 180px;
+	 margin-top : -10px;
+}
+.maincontentsdiv{
+	position:fixed;
+	margin-left: 205px;
+	margin-top: 113px;
+	width:100%;
+	height: 100%;
+	overflow:auto;
+}
+.maincontentsdiv2{
+	position:fixed;
+	margin-left: 226px;
+	margin-top: 95px;
+}
+.nocoursesprofdiv{
+	position:fixed;
+	margin-left: 221px;
+	margin-top: 133px;
+}
+#Ncorso{
+	background-color: #efefef;
+	text-align:center;
+	font-size:15px;
+	padding:5px;
+	font-weight: bold;
+}
+.Ptable{
+	background-color: #efefef;
+	text-align:center;
+	font-size:15px;
+	padding:5px;
+	font-weight: bold;
+}
+a{
+    text-decoration: none; 
+    font-weight: bold;
+    color: #000000;
+}
+a:hover{
+	text-decoration: underline;
+    color: #0080FF;
+}
+#tdwhite{
+	background-color: #ffffff;
+}
+.infodiv{
+	position: fixed;
+	margin-left: 3px;
+	margin-top :-12px;
+	height: 500px;
+	width: 100%;
+}
+.insertdiv{
+	position: fixed;
+	margin-left: 525px;
+	margin-top :-12px;
+}
+#smandatory{
+	position:fixed;
+	height: 300px;
+	width: 300px;
+	overflow: auto;
+}
+input[type="text"]{
+	border: 1px solid #000000;
+}
+input[type="password"]{
+	border: 1px solid #000000;
+}
+.error{
+	color : #FF0000;
+}
+#orariotab{
+	position:fixed;
+	width:561px;
+	height: 300px;
+	overflow:auto;
+}
+#tableorarioaule{
+	padding: 5px;
+	font-size: 17px;
+	text-align:center;
+}
+tr.odd{ 
+background-color: #99ff99; 
+}
+.result{
+	position: fixed;
+	margin-left: 235px;
+	margin-top:150px;
+	width:655px;
+	height: 460px;
+	overflow:auto;
+}
+#tabellacoraule{
+	width:100%;
+	overflow:auto;
+	height: 270px;
+	width:500px;
+}
+#salvaorariodiv{
+	position:fixed;
+	margin-left:240px;
+	margin-top:-15px;
+}
+#calcolaorariodiv{
+	position:fixed;
+	width:20px;
+	margin-top:-15px;
+}
+.semaforo{
+	margin-left: 133px;
+}
+#tabellacorsi{
+	position:fixed;
+	height: 390px;
+	overflow:auto;
+	width:460px;
+}
+#tabellaule{
+	position:fixed;
+	width:310px;
+	height:390px;
+	overflow:auto;
+}
+#homepanelsegreteria td{
+	width:196px;
+}
+#botprof {
+	position:fixed;
+	margin-top:300px;
+	margin-left: 278px;
+}
+#tablerlink{
+	position:fixed;
+	margin-left: 57px;
+}
+#export{
+	position:fixed;
+	margin-top:400px;
+	margin-left:900px;
+}
+#annoorario{
+	position:fixed;
+	width: 100px;
+	height: 33px;
+	margin-top: 110px;
+	margin-left: 239px;
+}
+.mandatory{
+	position:fixed;
+	width: 400px;
+	height: 300px;
+	margin-top: 97px;
+	margin-left: 800px;
+}
+#ccounterdiv{
+	position:absolute;
+	z-index: 1;
+	margin-left: 280px;
+	margin-top: 130px;
+	background-color: red;
+}
+.selectall{
+width: 20px;
+height: 20px;
+background-image: url('/img/all.png');
+background-color: white;
+background-repeat: no-repeat;
+background-position: center center;
+}
+.legend{
+	position:fixed;
+	height: 100px;
+	width:185px;
+	margin-top: 500px;
+	margin-left:800px;
+}
+.legendtd{
+	width:25px;
+}
+.legend tr{
+	font-size:12px;
+}
+.calcolaorariob{
+	position:fixed;
+	margin-top: 26px; 
+	margin-left:149px;
+}
+.calcolaorariom{
+	position:fixed;
+	margin-top: 26px; 
+	margin-left:282px;
+}
+/***********************************
+ * Layout
+ ***********************************/
+.wSelect-el {
+	width: 0px;
+	height: 0px;
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	overflow: hidden;
+}
+.wSelect {
+	position: relative;
+	display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: middle;
+	cursor: pointer;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.wSelect-arrow {
+	position: absolute;
+	width: 30px;
+	right: 0px;
+	top: 0px;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: 0px center;
+}
+.wSelect-hover .wSelect-arrow,
+.wSelect-active .wSelect-arrow  {
+	background-position: -30px center;
+}
+.wSelect.wSelect-multiple {
+	overflow: hidden;
+}
+.wSelect-selected {
+	margin: 0px 35px 0px 5px;
+	padding: 5px 0;
+	overflow: hidden;
+	white-space: nowrap;
+	background-repeat: no-repeat;
+	background-position: 0 center;
+}
+.wSelect-options-holder {
+	position: absolute;
+	display: none;
+	left: 0px;
+	z-index: 200;
+	overflow: hidden;
+	}
+.wSelect-multiple .wSelect-options-holder {
+	position: relative !important;
+	display: block !important;
+	top: auto !important;
+	z-index: auto !important;
+	border: none !important;
+}
+.wSelect-options {
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.wSelect-option {
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	margin-bottom: 1px;
+	cursor: pointer;
+}
+.wSelect-option-last {
+	margin-bottom: 0px;
+}
+.wSelect-option-value {
+	margin: 0 5px;
+	padding: 5px 0;
+	background-repeat: no-repeat;
+	background-position: 0 center;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.wSelect-option-disabled .wSelect-option-value {
+	filter: alpha(opacity=20);
+	opacity: 0.2;
+}
+.wSelect-option-icon {
+	padding-left: 20px;
+}
+
+/***********************************
+ * Theme - classic
+ ***********************************/
+.wSelect-theme-classic.wSelect {
+	border: solid #CCC 1px;
+    color: #555;
+    background-color: #FAFAFA;	
+	font-size: 12px;
+	font-family: verdana;
+	line-height: 20px;
+	min-width: 55px;
+	max-width: 55px;
+	margin-bottom: 7px;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+.wSelect-arrow {
+	background-image: url('/img/arrow-down.png');
+}
+.wSelect-theme-classic.wSelect-hover,
+.wSelect-theme-classic.wSelect-active {
+    border-color: rgb(82, 168, 236);
+    border-color: rgba(82, 168, 236, 0.8);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+.wSelect-theme-classic .wSelect-options-holder {
+	background-color: #FAFAFA;
+	border: solid #CACACA 1px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	min-width: 30px;
+	max-width: 30px;
+}
+.wSelect-theme-classic .wSelect-options {
+	border: solid #FAFAFA 1px;
+	border-radius: 4px;
+    -webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	height: 56px !important;
+}
+
+.wSelect-theme-classic .wSelect-option {
+	background-color: #FFF;
+	color: #333;
+}
+.wSelect-theme-classic .wSelect-option-disabled {
+	background-color: #FFF !important;
+	color: #333 !important;	
+}
+.wSelect-theme-classic .wSelect-option-selected,
+.wSelect-theme-classic .wSelect-option:hover {
+	background-color: #99AAFF;
+	color: #FAFAFA;
+}
+
+/***********************************
+ * Labels
+ ***********************************/
+.wLabel-top,
+.wLabel-left,
+.wLabel-left-top {
+    vertical-align: middle;
+    font-size: 10px;
+    line-height: 16px;
+    color: #999;
+    display: block;
+    margin: 5px 0 3px 3px;
+}
+.wLabel-left-top {
+    vertical-align: top;
+}
+@media screen and (min-width: 600px) {
+    .wLabel-left,
+    .wLabel-left-top {
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+        width: 70px;
+        text-align: right;
+        margin: 0 0 7px 0;
+    }
+}
+.download {
+	position: fixed;
+	width: 122px;
+	height: 25px;
+	margin-left: 209px;
+	margin-top: -25px;
+}
